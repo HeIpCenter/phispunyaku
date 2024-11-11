@@ -36,16 +36,21 @@ function hideLoading() {
 }
 
 // Fungsi untuk menampilkan modal alert dengan pesan
+// Modified showAlert function
 function showAlert(message, randomId = "") {
   const alertMessage = document.getElementById("alertMessage");
-  randomIdToCopy = randomId; // Simpan ID acak untuk disalin
-  alertMessage.textContent = `${message} ${
-    randomId ? `ID Anda: ${randomId}` : ""
-  }`; // Set pesan
+  randomIdToCopy = randomId; // Save the random ID for copying
+
+  // Include button HTML if randomId is provided
+  alertMessage.innerHTML = `
+    ${message} ${randomId ? `<br><br>ID Anda: <strong>${randomId}</strong>` : ""}
+    ${randomId ? '<br><button id="copyIdBtn" onclick="copyToClipboard()">Salin ID</button>' : ""}
+  `;
 
   const alertModal = document.getElementById("alertModal");
-  alertModal.style.display = "block"; // Tampilkan modal
+  alertModal.style.display = "block"; // Show the alert modal
 }
+
 
 // Function to hide the alert
 function hideAlert() {
