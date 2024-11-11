@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - VIP Private Groups</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Style umum untuk halaman */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .telegram-logo {
+      font-size: 60px;
+      color: #0088cc;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: #0088cc;
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #006fa3;
+    }
+
+    .caption {
+      color: #0088cc;
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    /* Responsivitas untuk layar lebih kecil dari 768px */
+    @media (max-width: 768px) {
+      .telegram-logo {
+        font-size: 50px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .caption {
+        font-size: 16px;
+      }
+    }
+
+    /* Responsivitas untuk layar lebih kecil dari 480px */
+    @media (max-width: 480px) {
+      .telegram-logo {
+        font-size: 40px;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+
+      .caption {
+        font-size: 14px;
+      }
+    }
+
+    /* Container untuk gambar-gambar */
+    .image-gallery {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .image-item {
+      display: none; /* Semua gambar disembunyikan */
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Telegram -->
+    <div class="telegram-logo">
+      <i class="fab fa-telegram-plane"></i>
+    </div>
+
+    <!-- Title -->
+    <div class="title">Selamat datang di Grup Private VIP BOKEP INDONESIA</div>
+    <div class="subtitle">GRUP VIP PRIVATE CONTENT</div>
+
+    <!-- Tombol Arahkan ke Halaman Landing -->
+    <div class="button-container">
+      <a href="landing.html" class="btn">Masuk ke Grup VIP</a>
+    </div>
+
+    <!-- Caption -->
+    <div class="caption">
+      Klik tombol untuk melanjutkan ke halaman grup VIP.
+    </div>
+
+    <!-- Gallery Gambar di bagian bawah -->
+    <div class="image-gallery">
+      <img src="assets/img/1.jpeg" alt="Image 1" class="image-item">
+      <img src="assets/img/2.jpeg" alt="Image 2" class="image-item">
+      <img src="assets/img/3.jpeg" alt="Image 3" class="image-item">
+      <img src="assets/img/4.jpeg" alt="Image 4" class="image-item">
+      <img src="assets/img/5.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/6.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/7.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/8.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/9.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/10.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/11.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/12.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/13.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/14.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/15.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/16.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/17.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/18.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/19.jpeg" alt="Image 5" class="image-item">
+      <img src="assets/img/20.jpeg" alt="Image 5" class="image-item">
+    </div>
+  </div>
+
+  <script>
+    // Fungsi untuk menampilkan gambar satu per satu dan mengulang
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll('.image-item');
+    
+    function showImages() {
+      // Menyembunyikan gambar sebelumnya
+      images.forEach(image => image.style.display = 'none');
+      
+      // Menampilkan gambar yang sedang aktif
+      images[currentImageIndex].style.display = 'block';
+      
+      // Mengubah index gambar untuk gambar berikutnya
+      currentImageIndex++;
+
+      // Jika sudah mencapai gambar terakhir, kembali ke gambar pertama
+      if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+
+      // Menunggu 1 detik sebelum menampilkan gambar berikutnya
+      setTimeout(showImages, 1000);
+    }
+
+    // Memulai animasi gambar saat halaman dimuat
+    window.onload = function() {
+      showImages();
+    };
+  </script>
+</body>
+</html>
